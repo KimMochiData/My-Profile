@@ -3,9 +3,9 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta name="description" content="Personal homepage of EuiJin Kim, master student in Computer Science at Chung-Ang University." />
-  <meta name="author" content="EuiJin Kim" />
-  <title>EuiJin Kim | Personal Homepage</title>
+  <meta name="description" content="Personal homepage of Euijin Kim, master student in Computer Science at Chung-Ang University." />
+  <meta name="author" content="Euijin Kim" />
+  <title>Euijin Kim | Personal Homepage</title>
 
   <!--
     GitHub Pages upload guide
@@ -32,13 +32,8 @@
       --radius: 20px;
     }
 
-    * {
-      box-sizing: border-box;
-    }
-
-    html {
-      scroll-behavior: smooth;
-    }
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
 
     body {
       margin: 0;
@@ -50,14 +45,8 @@
       line-height: 1.65;
     }
 
-    a {
-      color: var(--accent);
-      text-decoration: none;
-    }
-
-    a:hover {
-      text-decoration: underline;
-    }
+    a { color: var(--accent); text-decoration: none; }
+    a:hover { text-decoration: underline; }
 
     .skip-link {
       position: absolute;
@@ -69,10 +58,7 @@
       border-radius: 10px;
       z-index: 100;
     }
-
-    .skip-link:focus {
-      left: 12px;
-    }
+    .skip-link:focus { left: 12px; }
 
     header {
       position: sticky;
@@ -215,9 +201,7 @@
       text-decoration: none;
     }
 
-    main {
-      min-width: 0;
-    }
+    main { min-width: 0; }
 
     .hero {
       padding: 4px 0 36px;
@@ -309,9 +293,7 @@
       color: var(--heading);
     }
 
-    p {
-      margin: 0 0 14px;
-    }
+    p { margin: 0 0 14px; }
 
     .pill-row {
       display: flex;
@@ -370,13 +352,8 @@
       margin-bottom: 8px;
     }
 
-    .pub-list .item {
-      margin-bottom: 0;
-    }
-
-    .authors {
-      color: #374151;
-    }
+    .pub-list .item { margin-bottom: 0; }
+    .authors { color: #374151; }
 
     .tag {
       display: inline-flex;
@@ -398,9 +375,7 @@
       gap: 14px;
     }
 
-    .compact {
-      margin-bottom: 0;
-    }
+    .compact { margin-bottom: 0; }
 
     footer {
       max-width: var(--max-width);
@@ -418,9 +393,7 @@
         flex-direction: column;
       }
 
-      .nav-links {
-        justify-content: flex-start;
-      }
+      .nav-links { justify-content: flex-start; }
 
       .page {
         grid-template-columns: 1fr;
@@ -428,13 +401,8 @@
         padding-top: 30px;
       }
 
-      aside {
-        position: static;
-      }
-
-      .profile-card {
-        text-align: left;
-      }
+      aside { position: static; }
+      .profile-card { text-align: left; }
 
       .profile-top-mobile {
         display: flex;
@@ -449,9 +417,7 @@
         flex: 0 0 auto;
       }
 
-      .grid-two {
-        grid-template-columns: 1fr;
-      }
+      .grid-two { grid-template-columns: 1fr; }
     }
 
     @media (max-width: 560px) {
@@ -460,9 +426,7 @@
         gap: 2px;
       }
 
-      .profile-top-mobile {
-        align-items: flex-start;
-      }
+      .profile-top-mobile { align-items: flex-start; }
     }
   </style>
 </head>
@@ -471,13 +435,16 @@
 
   <header>
     <nav class="nav" aria-label="Main navigation">
-      <a class="brand" href="#top">Eui-Jin Kim</a>
+      <a class="brand" href="#top">Euijin Kim</a>
       <div class="nav-links">
         <a href="#about">About</a>
         <a href="#news">News</a>
         <a href="#publications">Publications</a>
+        <a href="#experience">Experience</a>
+        <a href="#projects">Projects</a>
         <a href="#education">Education</a>
         <a href="#awards">Awards</a>
+        <a href="#skills">Skills</a>
         <a href="#contact">Contact</a>
       </div>
     </nav>
@@ -490,14 +457,14 @@
           <div class="avatar-wrap" aria-label="Profile photo">
             <img
               src="./프로필 사진.jpg"
-              alt="Eui-Jin Kim profile photo"
+              alt="Euijin Kim profile photo"
               onerror="if(!this.dataset.fallback){this.dataset.fallback='1';this.src='./profile.jpg';}else{this.style.display='none';this.nextElementSibling.style.display='block';}"
             />
             <div class="avatar-fallback" style="display:none;">EJ</div>
           </div>
 
           <div>
-            <h1>EuiJin Kim</h1>
+            <h1>Euijin Kim</h1>
             <p class="subtitle">Master Student<br />Department of Computer Science<br />Chung-Ang University</p>
           </div>
         </div>
@@ -517,7 +484,7 @@
     <main>
       <div class="hero" id="about">
         <div class="eyebrow">Personal Homepage</div>
-        <h2>Hi, I am EuiJin Kim.</h2>
+        <h2>Hi, I am Euijin Kim.</h2>
         <p class="lead">
           I am a master student in the Department of Computer Science at Chung-Ang University. My research interests include data integration, language models, and data mining.
         </p>
@@ -537,6 +504,10 @@
       <section id="news">
         <h2 class="section-title">News</h2>
         <ul class="news-list">
+          <li>
+            <span class="date">2026.06</span>
+            <span>Selected for the AI Future Technology Research Development Fund by Good Friends Foundation.</span>
+          </li>
           <li>
             <span class="date">2026.01</span>
             <span>Received the Best Workshop Paper Award at ICOIN 2026.</span>
@@ -565,25 +536,43 @@
         <ul class="pub-list">
           <li class="item">
             <h3>CPSRank: Unsupervised Keyphrase Extraction via Contextual Perturbation <span class="tag">Poster</span></h3>
-            <p class="authors">Hyunwook Yu, Minju Kim, <strong>EuiJin Kim</strong>, Mucheol Kim</p>
+            <p class="authors">Hyunwook Yu, Minju Kim, <strong>Euijin Kim</strong>, Mucheol Kim</p>
             <div class="item-meta">CIKM 2025 — The 34th ACM International Conference on Information and Knowledge Management · COEX Seoul, Korea · Nov. 2025</div>
           </li>
           <li class="item">
             <h3>Virtual Experts to Collective Decisions: An LLM-Driven Majority Voting for EM <span class="tag">Conference Paper</span></h3>
-            <p class="authors"><strong>EuiJin Kim</strong>, Taeyoung Choe, Mucheol Kim</p>
+            <p class="authors"><strong>Euijin Kim</strong>, Taeyoung Choe, Mucheol Kim</p>
             <div class="item-meta">PlatCon-25 · Jeju, Korea · Aug. 2025</div>
           </li>
           <li class="item">
             <h3>Construction of an LLM-Driven Baseball Play-by-Play Semantic Parser <span class="tag">Oral Presentation</span></h3>
-            <p class="authors"><strong>EuiJin Kim</strong>, Minhyeok Choi, Minju Kim, Mucheol Kim</p>
+            <p class="authors"><strong>Euijin Kim</strong>, Minhyeok Choi, Minju Kim, Mucheol Kim</p>
             <div class="item-meta">ICTC 2025 — The 16th International Conference on ICT Convergence · Jeju, Korea · Oct. 2025</div>
           </li>
           <li class="item">
             <h3>Quantifying Temperature Effects on LLM Output Diversity Using SBERT <span class="tag">Oral</span></h3>
-            <p class="authors"><strong>EuiJin Kim</strong>, TaeYoung Choe, Mucheol Kim</p>
+            <p class="authors"><strong>Euijin Kim</strong>, TaeYoung Choe, Mucheol Kim</p>
             <div class="item-meta">ICOIN 2026 — The 40th International Conference on Information Networking · Hanoi, Viet Nam · Jan. 2026</div>
           </li>
         </ul>
+      </section>
+
+      <section id="experience">
+        <h2 class="section-title">Research Experience</h2>
+        <article class="item compact">
+          <h3>Undergraduate Research Assistant</h3>
+          <div class="item-meta">Data Intelligence Lab, Chung-Ang University, Korea · Aug. 2023 - Feb. 2025</div>
+          <p>Worked as an undergraduate research assistant before entering the master's course.</p>
+        </article>
+      </section>
+
+      <section id="projects">
+        <h2 class="section-title">Projects</h2>
+        <article class="item compact">
+          <h3>Flood-Related Data Standardization and Real-World Data Utilization Research</h3>
+          <div class="item-meta">Korea Institute of Science and Technology Information (KISTI), Korea · Participating Researcher · Aug. 2024 - Jan. 2024</div>
+          <p>Contributed to language model fine-tuning for flood-related data standardization and real-world data utilization research.</p>
+        </article>
       </section>
 
       <section id="education">
@@ -606,6 +595,10 @@
         <h2 class="section-title">Honors & Awards</h2>
         <ul class="plain-list">
           <li class="item compact">
+            <h3>AI Future Technology Research Development Fund</h3>
+            <div class="item-meta">Good Friends Foundation, Korea · Jun. 2026</div>
+          </li>
+          <li class="item compact">
             <h3>Best Workshop Paper Award</h3>
             <div class="item-meta">ICOIN 2026 / Korea Institute of Information Scientists and Engineers (KIISE), Korea · Jan. 2026</div>
           </li>
@@ -616,10 +609,44 @@
         </ul>
       </section>
 
+      <section id="skills">
+        <h2 class="section-title">Skills & Techniques</h2>
+        <div class="grid-two">
+          <article class="item compact">
+            <h3>Programming Languages</h3>
+            <div class="pill-row">
+              <span class="pill">Python</span>
+              <span class="pill">C</span>
+              <span class="pill">C++</span>
+            </div>
+          </article>
+          <article class="item compact">
+            <h3>Operating Systems</h3>
+            <div class="pill-row">
+              <span class="pill">Windows</span>
+              <span class="pill">Linux</span>
+            </div>
+          </article>
+        </div>
+        <article class="item compact" style="margin-top:14px;">
+          <h3>Libraries & Tools</h3>
+          <div class="pill-row">
+            <span class="pill">PyTorch</span>
+            <span class="pill">Hugging Face Transformers</span>
+            <span class="pill">scikit-learn</span>
+            <span class="pill">pandas</span>
+            <span class="pill">NumPy</span>
+            <span class="pill">Git</span>
+            <span class="pill">LaTeX</span>
+            <span class="pill">Jupyter Notebook</span>
+          </div>
+        </article>
+      </section>
+
       <section id="contact">
         <h2 class="section-title">Contact</h2>
         <p>
-          I am interested in data integration, language models, and data mining. Please feel free to contact me by email.
+          I am interested in research on data integration, language models, and data mining. Please feel free to contact me by email.
         </p>
         <p>
           <strong>Address:</strong> 84, Heukseok-ro, Dongjak-gu, Seoul, Republic of Korea<br />
@@ -632,7 +659,7 @@
   </div>
 
   <footer>
-    © <span id="year"></span> EuiJin Kim. Built with HTML/CSS and hosted on GitHub Pages.
+    © <span id="year"></span> Euijin Kim. Built with HTML/CSS and hosted on GitHub Pages.
   </footer>
 
   <script>
